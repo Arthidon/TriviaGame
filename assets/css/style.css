@@ -1,3 +1,19 @@
 body {
-    background-color: aqua;
+    
+    background-image: url(../images/back.jpg);
+}
+
+#time {
+    color: white;
+}
+
+#game {
+    color: white;
+}
+
+.choice {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }

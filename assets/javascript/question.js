@@ -1,6 +1,6 @@
 var quizQuestions = [
     {
-        question: "Famous Warrior in WOW, Known for charging in recklessly",
+        question: "Famous Warrior in WOW, Known for charging in recklessly?",
         choices: ["leeroy Jenkins","Mulana","Snow Fox","Beeroism"],
         correctAnswer:  "leeroy Jenkins"
 
@@ -17,6 +17,13 @@ var quizQuestions = [
         question: "Which night elf was appointed the jailor of Illidan Stormrage?",
         choices: ["Maiev Shadowsong","Califax","Jarod Shadowsong","Malfurion Stormrage"],
         correctAnswer:  "Maiev Shadowsong"
+
+    },
+
+    {
+        question: "What is the Best Class in WOW.",
+        choices: ["Warrior","Mage","Shaman","Paladin"],
+        correctAnswer:  "Paladin"
 
     },
 
