@@ -60,6 +60,7 @@ function countDown() {
        $('#game').html(`
        <h4> ${question} </h4>
         ${loadChoices(choices)}
+        ${loadRemainingQuestion()}
        `);
         
     }
@@ -116,6 +117,14 @@ function displayResult() {
 
         loadQuestion();
     });
+
+    function loadRemainingQuestion() {
+        const remainingQuestion = quizQuestions.length - (currentQuestion + 1);
+        const totalQuestion = quizQuestions.length;
+
+        return `Remaining Questions: ${remainingQuestion}/${totalQuestion}`;
+
+    }
 
 
 loadQuestion();
