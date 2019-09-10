@@ -49,7 +49,7 @@ function countDown() {
 // display question and choices in game DIV
 
     function loadQuestion() {
-        counter = 3;
+        counter = 30;
         timer = setInterval(countDown, 1000);
 
         question = quizQuestions[currentQuestion].question; //
@@ -67,7 +67,7 @@ function countDown() {
     // display choices
     function loadChoices(choices) {
        var result = "";
-        //$(result).addClass("choice");
+        $(result).addClass("choice");
         
         
         
@@ -78,11 +78,26 @@ function countDown() {
            
             result += "<p class= choice data-answer= choices[i]>" + choices[i] + "</p>";
       
-        console.log(result);
+                // TEST CODE
+                //var result = $("<p>");
+                // result.addClass("choice");    
+                 //result.data("data-answer", choices[i]);
+                // console.log(result);
+                // result.append('choices[i]');
+                 //console.log(result);
+                 //$("#game").append(result);
+
+        
         }
         return result;
     }
 
+    //check if clicked item is correct answer
+
+      $(document).on('click', '.choice', function() {
+        const selectedAnswer = $(this).attr('data-answer');
+        console.log("test ", selectedAnswer);
+
+      });
 
 loadQuestion();
-//class="choice" data-answer="choices[i]"
