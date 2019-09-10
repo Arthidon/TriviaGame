@@ -133,14 +133,15 @@ function displayResult() {
 //Display images
     function randomImage(images) {
        const random = Math.floor(Math.random() * images.length);
-        randomImage = images[random];
-        return randomImage;
+        randImg = images[random];
+        return randImg;
     }
 
 
 
     function preloadImage(status){
         const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+        
 
         if (status === 'win') {
             $('#game').html(`
