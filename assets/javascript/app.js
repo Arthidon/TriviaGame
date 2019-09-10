@@ -76,17 +76,8 @@ function countDown() {
             $(result).addClass("choice");    
             $(result).data("data-answer", choices[i]);
            
-            result += "<p class= choice data-answer= choices[i]>" + choices[i] + "</p>";
-      
-                // TEST CODE
-                //var result = $("<p>");
-                // result.addClass("choice");    
-                 //result.data("data-answer", choices[i]);
-                // console.log(result);
-                // result.append('choices[i]');
-                 //console.log(result);
-                 //$("#game").append(result);
-
+            result += `<p class="choice" data-answer=${choices[i]} > ${choices[i]} </p>`
+            
         
         }
         return result;
