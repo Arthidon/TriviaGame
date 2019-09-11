@@ -106,7 +106,7 @@ function displayResult() {
         <p>You get ${score} questions(s) right</p>
         <p>You missed ${lost} questions(s)</p>
         <p>Total questions ${quizQuestions.length}</p>
-        <button class="btn bt-dark" id="reset">Reset Game</button>
+        <button class="btn btn-secondary" id="reset">Reset Game</button>
     `;
 
     $("#game").html(result);

@@ -17,3 +17,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+.jumbotron {
+    background-size: 100% 100%; 
+}
