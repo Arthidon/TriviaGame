@@ -30,14 +30,14 @@ var quizQuestions = [
 ];
 
  const funImages = [
-    '../assets/images/retwin.gif',
-    '../assets/images/genwin.gif',
+    '../images/retwin.gif',
+    '../images/genwin.gif',
     
 
 ];
 
  const sadImages = [
-    '../assets/images/retlose.gif',
-    '../assets/images/leroylose.gif',
+    '../images/retlose.gif',
+    '../images/leroylose.gif',
     
 ];
